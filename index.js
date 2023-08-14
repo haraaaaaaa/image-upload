@@ -11,7 +11,7 @@ app.set("views", path.join(__dirname, "views"));
 const getImages = require("./routes/get-images");
 const uploadImage = require("./routes/upload-image");
 
-//app.use(getImages)
+app.use(getImages);
 app.use(uploadImage);
 
 app.listen(5000, () => console.log("Server is running on Port 5000!"));
